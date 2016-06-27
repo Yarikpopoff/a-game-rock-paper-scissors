@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Игра</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>	
+</head>
+<body>
+	<form name="form1">
+		<p>Выбирай!</p>
+		<input type="radio" name="thing" value="stone" onclick="makeChoise(value)">Камень<br>
+		<input type="radio" name="thing" value="scissors" onclick="makeChoise(value)">Ножницы<br>
+		<input type="radio" name="thing" value="paper" onclick="makeChoise(value)">Бумага<br>
+		<p>Твой выбор: <span id="youChoise"></span></p>
+		<p><input type="button" value="Играть" onclick="game()"></p>
+		<p>Выбор комьютера: <span id="compChoise"></span></p>
+		<p>Победитель:<span id="winner"></span></p>
+		<p><span id="comment"></span></p>
+	</form>
+</body>
+</html>
